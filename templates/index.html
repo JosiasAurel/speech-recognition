@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Speech Recognition</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+  <div id="sr">
+    <h1>Speech Recognition</h1>
+    
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file"name='file' placeholder="Choose audio file" id="" />
+      <button type="submit">Transcribe</button>
+    </form>
+  </div>
+  <div>
+	  <h1> Transcript </h1>
+	  <p>{{transcript}} </p>
+  </div>
+</body>
+</html>
