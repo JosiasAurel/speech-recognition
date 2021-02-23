@@ -13,6 +13,6 @@ install dependencies with
 pip install -r requirements.txt
 ```
 
-Run wuth `python app.py` (use `python3` if on linux/mac)
+Run wuth `python index.py` (use `python3` if on linux/mac)
 
 
